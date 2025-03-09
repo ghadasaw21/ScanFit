@@ -3,17 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		771BC7EC2D708AF70085C570 /* ScanFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BC7EB2D708AF70085C570 /* ScanFitApp.swift */; };
-		771BC7EE2D708AF70085C570 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BC7ED2D708AF70085C570 /* ContentView.swift */; };
 		771BC7F02D708AFA0085C570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771BC7EF2D708AFA0085C570 /* Assets.xcassets */; };
 		771BC7F32D708AFA0085C570 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771BC7F22D708AFA0085C570 /* Preview Assets.xcassets */; };
-		771BC7FD2D708AFA0085C570 /* ScanFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BC7FC2D708AFA0085C570 /* ScanFitTests.swift */; };
-		771BC8072D708AFA0085C570 /* ScanFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BC8062D708AFA0085C570 /* ScanFitUITests.swift */; };
-		771BC8092D708AFA0085C570 /* ScanFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771BC8082D708AFA0085C570 /* ScanFitUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,18 +28,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B9CA8A02D74609E00E2B46E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2B9CA8A12D74627300E2B46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771BC7E82D708AF70085C570 /* ScanFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		771BC7EB2D708AF70085C570 /* ScanFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFitApp.swift; sourceTree = "<group>"; };
-		771BC7ED2D708AF70085C570 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		771BC7EF2D708AFA0085C570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771BC7F22D708AFA0085C570 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		771BC7F82D708AFA0085C570 /* ScanFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		771BC7FC2D708AFA0085C570 /* ScanFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFitTests.swift; sourceTree = "<group>"; };
 		771BC8022D708AFA0085C570 /* ScanFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		771BC8062D708AFA0085C570 /* ScanFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFitUITests.swift; sourceTree = "<group>"; };
-		771BC8082D708AFA0085C570 /* ScanFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2B9CA8BD2D7B399400E2B46E /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		2B9CA8BE2D7B39A000E2B46E /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+		2B9CA8BF2D7B39B000E2B46E /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		2B9CA8C02D7B39BA00E2B46E /* Utils */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utils; sourceTree = "<group>"; };
+		2B9CA8CB2D7B3C5300E2B46E /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		771BC7E52D708AF70085C570 /* Frameworks */ = {
@@ -75,8 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				771BC7EA2D708AF70085C570 /* ScanFit */,
-				771BC7FB2D708AFA0085C570 /* ScanFitTests */,
-				771BC8052D708AFA0085C570 /* ScanFitUITests */,
 				771BC7E92D708AF70085C570 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,9 +104,12 @@
 		771BC7EA2D708AF70085C570 /* ScanFit */ = {
 			isa = PBXGroup;
 			children = (
-				771BC7EB2D708AF70085C570 /* ScanFitApp.swift */,
-				771BC7ED2D708AF70085C570 /* ContentView.swift */,
-				771BC7EF2D708AFA0085C570 /* Assets.xcassets */,
+				2B9CA8A12D74627300E2B46E /* Info.plist */,
+				2B9CA8CB2D7B3C5300E2B46E /* Resources */,
+				2B9CA8BD2D7B399400E2B46E /* Models */,
+				2B9CA8BE2D7B39A000E2B46E /* ViewModels */,
+				2B9CA8BF2D7B39B000E2B46E /* Views */,
+				2B9CA8C02D7B39BA00E2B46E /* Utils */,
 				771BC7F12D708AFA0085C570 /* Preview Content */,
 			);
 			path = ScanFit;
@@ -105,26 +118,10 @@
 		771BC7F12D708AFA0085C570 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				771BC7EF2D708AFA0085C570 /* Assets.xcassets */,
 				771BC7F22D708AFA0085C570 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		771BC7FB2D708AFA0085C570 /* ScanFitTests */ = {
-			isa = PBXGroup;
-			children = (
-				771BC7FC2D708AFA0085C570 /* ScanFitTests.swift */,
-			);
-			path = ScanFitTests;
-			sourceTree = "<group>";
-		};
-		771BC8052D708AFA0085C570 /* ScanFitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				771BC8062D708AFA0085C570 /* ScanFitUITests.swift */,
-				771BC8082D708AFA0085C570 /* ScanFitUITestsLaunchTests.swift */,
-			);
-			path = ScanFitUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +134,18 @@
 				771BC7E42D708AF70085C570 /* Sources */,
 				771BC7E52D708AF70085C570 /* Frameworks */,
 				771BC7E62D708AF70085C570 /* Resources */,
+				2B9CA8A02D74609E00E2B46E /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2B9CA8BD2D7B399400E2B46E /* Models */,
+				2B9CA8BE2D7B39A000E2B46E /* ViewModels */,
+				2B9CA8BF2D7B39B000E2B46E /* Views */,
+				2B9CA8C02D7B39BA00E2B46E /* Utils */,
+				2B9CA8CB2D7B3C5300E2B46E /* Resources */,
 			);
 			name = ScanFit;
 			productName = ScanFit;
@@ -190,7 +195,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					771BC7E72D708AF70085C570 = {
@@ -257,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771BC7EE2D708AF70085C570 /* ContentView.swift in Sources */,
-				771BC7EC2D708AF70085C570 /* ScanFitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771BC7FD2D708AFA0085C570 /* ScanFitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771BC8072D708AFA0085C570 /* ScanFitUITests.swift in Sources */,
-				771BC8092D708AFA0085C570 /* ScanFitUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +422,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScanFit/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DZ3GY9R6K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanFit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +455,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScanFit/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DZ3GY9R6K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanFit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera to take photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app needs access to your photo library to select images.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,7 +483,6 @@
 		771BC8102D708AFA0085C570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -492,7 +501,6 @@
 		771BC8112D708AFA0085C570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -511,7 +519,6 @@
 		771BC8132D708AFA0085C570 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -528,7 +535,6 @@
 		771BC8142D708AFA0085C570 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
